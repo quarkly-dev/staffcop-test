@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://loving-lovelace-1cf2ad.netlify.app/sitemap-index.xml

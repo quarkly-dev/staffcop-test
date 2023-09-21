@@ -26,29 +26,35 @@ const MyNav = props => {
 		            
 		<a href="#" className="menu-trigger">
 			Solutions 
-			<Icon size="24px" category="md" icon={MdKeyboardArrowDown} color="#000" />
+			<Icon
+				className="arrow-menu"
+				size="24px"
+				category="md"
+				icon={MdKeyboardArrowDown}
+				color="#000"
+			/>
 		</a>
 		            
 		<div className="munecontainer">
 			            
-			<NavItems className="menuopen" display={isOpen ? 'block' : 'none'}>
+			<NavItems className="menuopen" data-display={isOpen ? 'block' : 'none'}>
 				                
 				<ul ref={clickItemRef}>
 					                    
 					<li>
-						<a href="/starter">
+						<a href="/administration">
 							Remote Administration
 						</a>
 					</li>
 					                    
 					<li>
-						<a href="/UAM">
+						<a href="/monitoring">
 							Employee Monitoring
 						</a>
 					</li>
 					                    
 					<li>
-						<a href="/DLP">
+						<a href="/security">
 							Information Security
 						</a>
 					</li>

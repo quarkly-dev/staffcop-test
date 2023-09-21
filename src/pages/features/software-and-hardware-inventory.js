@@ -1,9 +1,9 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Strong, Text, Icon, Box, Image } from "@quarkly/widgets";
+import { Theme, Strong, Text, Icon, Box, Link, Image, Section } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { RawHtml, Override, StackItem, Stack, Section } from "@quarkly/components";
+import { RawHtml, Override, StackItem, Stack } from "@quarkly/components";
 import * as Components from "components";
 import { BsFillCircleFill } from "react-icons/bs";
 export default (() => {
@@ -11,15 +11,18 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"features/software-and-hardware-inventory"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				StaffCop Enterprise
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
-			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} type={"image/x-icon"} />
-			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} />
-			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} />
-			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} />
-			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} />
-			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/fav.svg?v=2021-02-25T00:02:20.144Z"} />
+			<meta name={"description"} content={"StaffCop provides a unique, fully integrated solution that focuses on detection and response to insider threats through a combination of advanced behavioral analysis and context-rich logging of insider activity.\n\n"} />
+			<meta property={"og:title"} content={"StaffCop Enterprise"} />
+			<meta property={"og:description"} content={"StaffCop provides a unique, fully integrated solution that focuses on detection and response to insider threats through a combination of advanced behavioral analysis and context-rich logging of insider activity.\n\n"} />
+			<meta property={"og:image"} content={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/gfjkjkljkl.nbmbv.png?v=2020-11-04T15:35:13.162Z"} />
+			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/favicon-32x32.png?v=2023-08-25T09:35:09.985Z"} type={"image/x-icon"} />
+			<link rel={"apple-touch-icon"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/android-chrome-512x512.png?v=2023-08-23T12:52:41.903Z"} />
+			<link rel={"apple-touch-icon"} sizes={"76x76"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/android-chrome-512x512.png?v=2023-08-23T12:52:41.903Z"} />
+			<link rel={"apple-touch-icon"} sizes={"152x152"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/android-chrome-512x512.png?v=2023-08-23T12:52:41.903Z"} />
+			<link rel={"apple-touch-startup-image"} href={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/android-chrome-512x512.png?v=2023-08-23T12:52:41.903Z"} />
+			<meta name={"msapplication-TileImage"} content={"https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/android-chrome-512x512.png?v=2023-08-25T04:37:47.288Z"} />
 			<meta name={"msapplication-TileColor"} content={"#1465FF"} />
 		</Helmet>
 		<Components.Header />
@@ -42,23 +45,22 @@ export default (() => {
 				>
 					<Override
 						slot="StackItemContent"
-						flex-direction="column"
-						justify-content="center"
-						align-items="flex-start"
 						sm-align-items="center"
 						lg-align-items="center"
 						padding="0px 10px 0px 0px"
+						flex-direction="column"
+						justify-content="center"
+						align-items="flex-start"
 					/>
 					{"        "}
 					<Text
-						font="--headline2"
 						margin="0px 0px 16px 0px"
 						display="inline-block"
 						md-font="normal 700 30px/40px Inter, sans-serif"
 						lg-text-align="center"
+						font="--headline2"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -67,13 +69,12 @@ export default (() => {
 							hyphens="manual"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
 							>
 								Software and Hardware Inventory
 								<br />
@@ -83,27 +84,27 @@ export default (() => {
 					</Text>
 					<Box display="flex" align-items="center" margin="0px 0px 0px 0px">
 						<Icon
-							category="bs"
-							icon={BsFillCircleFill}
 							size="10px"
 							color="rgba(20, 101, 255, 1)"
 							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
+							category="bs"
+							icon={BsFillCircleFill}
 						/>
-						<Text margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter">
+						<Text font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter" margin="9px 0px 9px 18px" color="#555">
 							Applications installed or uninstalled on each workstation
 							<br />
 							{"\n\n"}
 						</Text>
 					</Box>
-					<Box display="flex" align-items="center">
+					<Box align-items="center" display="flex">
 						<Icon
-							category="bs"
 							icon={BsFillCircleFill}
 							size="10px"
 							color="rgba(20, 101, 255, 1)"
 							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
+							category="bs"
 						/>
-						<Text margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter">
+						<Text font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter" margin="9px 0px 9px 18px" color="#555">
 							Updates of applications installed on each workstation
 							<br />
 							{"\n\n"}
@@ -111,11 +112,11 @@ export default (() => {
 					</Box>
 					<Box display="flex" align-items="center">
 						<Icon
-							category="bs"
 							icon={BsFillCircleFill}
 							size="10px"
 							color="rgba(20, 101, 255, 1)"
 							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
+							category="bs"
 						/>
 						<Text margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter">
 							How many PCs have this software installed
@@ -125,13 +126,13 @@ export default (() => {
 					</Box>
 					<Box display="flex" align-items="center">
 						<Icon
+							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
 							category="bs"
 							icon={BsFillCircleFill}
 							size="10px"
 							color="rgba(20, 101, 255, 1)"
-							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
 						/>
-						<Text margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter">
+						<Text color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter" margin="9px 0px 9px 18px">
 							Devices installed or uninstalled on each workstation
 							<br />
 							{"\n\n"}
@@ -145,7 +146,7 @@ export default (() => {
 							color="rgba(20, 101, 255, 1)"
 							box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
 						/>
-						<Text margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter" sm-font="400 16px/22px --fontFamily-googleInter">
+						<Text sm-font="400 16px/22px --fontFamily-googleInter" margin="9px 0px 9px 18px" color="#555" font="400 18px/160% --fontFamily-googleInter">
 							Alerts can be sent in case of installation or uninstallation
 							<br />
 							{"\n\n"}
@@ -153,63 +154,65 @@ export default (() => {
 					</Box>
 					{"    "}
 					<Link
-						href="/demo-request"
-						position="relative"
-						z-index="2"
-						color="#ffffff"
+						border-image="linear-gradient(353.68deg, rgba(255, 255, 255, 0) -0.12%, rgba(255, 255, 255, 0.04) 56.34%)  3 / 1 / 0 stretch"
 						font="600 18px/22px --fontFamily-googleInter"
-						text-decoration-line="initial"
-						padding="16px 38px 16px 38px"
 						box-shadow="inset 0px 5px 17px rgba(255, 255, 255, 0.23)"
+						border-style="solid"
+						href="/demo-request"
+						padding="16px 38px 16px 38px"
+						text-decoration-line="initial"
 						border-radius="40px"
 						background="--color-primary"
-						border-width="1px"
-						border-style="solid"
-						border-image="linear-gradient(353.68deg, rgba(255, 255, 255, 0) -0.12%, rgba(255, 255, 255, 0.04) 56.34%)  3 / 1 / 0 stretch"
+						sm-padding="16px 20px 16px 20px"
+						md-padding="16px 26px 16px 26px"
+						position="relative"
+						z-index="2"
 						margin="36px 0px 0px 0px"
 						hover-background="#409EEB"
 						transition="-webkit-transition: all .3s;  transition: all .3s"
 						sm-font="600 16px/22px --fontFamily-googleInter"
-						sm-padding="16px 20px 16px 20px"
-						md-padding="16px 26px 16px 26px"
+						color="#ffffff"
+						border-width="1px"
 					>
 						Request demo
 					</Link>
 				</StackItem>
 				{"    "}
-				<StackItem width="50%" display="flex" sm-width="100%" lg-width="100%">
+				<StackItem lg-width="100%" width="50%" display="flex" sm-width="100%">
 					<Override slot="StackItemContent" position="relative" lg-align-items="center" lg-justify-content="center" />
 					{"        "}
 					<Image
-						width="803px"
-						src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15:07:09.010Z"
-						md-width="400px"
-						position="absolute"
-						right="-115px"
-						left="auto"
 						top="-60px"
-						bottom="auto"
-						lg-width="500px"
-						lg-position="relative"
-						lg-top="0px"
-						lg-right="auto"
 						md-top="0px"
 						md-right="auto"
-						lg-bottom="auto"
 						lg-left="auto"
+						src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15:07:09.010Z"
+						right="-115px"
+						lg-bottom="auto"
+						position="absolute"
+						lg-right="auto"
+						lg-position="relative"
+						width="803px"
+						lg-width="500px"
+						bottom="auto"
+						lg-top="0px"
 						md-bottom="auto"
 						md-left="auto"
+						md-width="400px"
+						left="auto"
+						srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/aasdsadasdasd.png?v=2020-10-19T15%3A07%3A09.010Z&quality=85&w=3200 3200w"
+						sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw"
 					/>
 					{"    "}
 				</StackItem>
 			</Stack>
 		</Section>
 		<Components.EmbedHTML />
-		<Section background="#FFFFFF" padding="24px 0 24px 0">
+		<Section padding="24px 0 24px 0" background="#FFFFFF">
 			<Override slot="SectionContent" max-width="1200px" align-items="center" />
 			<Stack margin="0px 0px 0px 0px" width="100%" gap="--cmp-stack-gap-default">
 				{"    "}
-				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
+				<StackItem sm-width="100%" nout-width="100%" width="80%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
 					<Text
@@ -223,45 +226,40 @@ export default (() => {
 						sm-font="normal 700 24px/30px Inter, sans-serif"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
-							word-break="normal"
-							white-space="normal"
 							text-indent="0"
 							text-overflow="clip"
 							hyphens="manual"
+							overflow-wrap="normal"
+							word-break="normal"
+							white-space="normal"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
 							>
 								<Strong
-									data-q-widget-type="PRIMITIVE"
+									hyphens="manual"
 									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
-									hyphens="manual"
 								>
 									{"\n"}
 									<Strong
-										data-q-widget-type="PRIMITIVE"
+										text-overflow="clip"
+										hyphens="manual"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
 										text-indent="0"
-										text-overflow="clip"
-										hyphens="manual"
 									>
 										{"\n"}
 										<Strong
-											data-q-widget-type="PRIMITIVE"
 											overflow-wrap="normal"
 											word-break="normal"
 											white-space="normal"
@@ -285,12 +283,12 @@ export default (() => {
 						{"\n\n\n\n"}
 					</Text>
 					<Text
+						letter-spacing="-1%"
+						sm-text-align="center"
 						font="400 18px/160% --fontFamily-googleInter"
 						margin="30px 0px 0px 0px"
 						display="inline-block"
 						color="#555"
-						letter-spacing="-1%"
-						sm-text-align="center"
 					>
 						You can see applications installed or uninstalled on each workstation in a single report. It will contains such details as vendor, version, and the date the availability was checked last time.
 						<br />
@@ -301,46 +299,43 @@ export default (() => {
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12:14:58.074Z" />
+					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12:14:58.074Z" srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/101.png?v=2021-02-03T12%3A14%3A58.074Z&quality=85&w=3200 3200w" sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw" />
 					{"    "}
 				</StackItem>
 				{"    "}
 			</Stack>
-			<Stack margin="0px 0px 0px 0px" width="100%" gap="--cmp-stack-gap-default">
+			<Stack gap="--cmp-stack-gap-default" margin="0px 0px 0px 0px" width="100%">
 				{"    "}
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
 					<Text
-						font="normal 700 32px/140% --fontFamily-googleInter"
-						margin="0px 0px 0px 0px"
 						display="inline-block"
 						color="rgba(19, 33, 42, 1)"
 						letter-spacing="-1%"
 						md-font="normal 700 30px/40px Inter, sans-serif"
 						sm-text-align="center"
 						sm-font="normal 700 24px/30px Inter, sans-serif"
+						font="normal 700 32px/140% --fontFamily-googleInter"
+						margin="0px 0px 0px 0px"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
+							text-overflow="clip"
+							hyphens="manual"
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
 							text-indent="0"
-							text-overflow="clip"
-							hyphens="manual"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
-								overflow-wrap="normal"
-								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
 							>
 								<Strong
-									data-q-widget-type="PRIMITIVE"
 									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
@@ -350,17 +345,15 @@ export default (() => {
 								>
 									{"\n"}
 									<Strong
-										data-q-widget-type="PRIMITIVE"
+										hyphens="manual"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
 										text-indent="0"
 										text-overflow="clip"
-										hyphens="manual"
 									>
 										{"\n"}
 										<Strong
-											data-q-widget-type="PRIMITIVE"
 											overflow-wrap="normal"
 											word-break="normal"
 											white-space="normal"
@@ -370,7 +363,6 @@ export default (() => {
 										>
 											{"\n"}
 											<Strong
-												data-q-widget-type="PRIMITIVE"
 												overflow-wrap="normal"
 												word-break="normal"
 												white-space="normal"
@@ -396,12 +388,12 @@ export default (() => {
 						{"\n\n\n\n"}
 					</Text>
 					<Text
+						letter-spacing="-1%"
+						sm-text-align="center"
 						font="400 18px/160% --fontFamily-googleInter"
 						margin="30px 0px 0px 0px"
 						display="inline-block"
 						color="#555"
-						letter-spacing="-1%"
-						sm-text-align="center"
 					>
 						You can see updates of applications installed on each workstation in a single report. It will contains such details as vendor, version, and the date the availability was checked last time.
 						<br />
@@ -412,7 +404,7 @@ export default (() => {
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12:16:00.247Z" />
+					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12:16:00.247Z" srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/102.png?v=2021-02-03T12%3A16%3A00.247Z&quality=85&w=3200 3200w" sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw" />
 					{"    "}
 				</StackItem>
 				{"    "}
@@ -423,45 +415,41 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
 					<Text
+						sm-text-align="center"
+						sm-font="normal 700 24px/30px Inter, sans-serif"
 						font="normal 700 32px/140% --fontFamily-googleInter"
 						margin="0px 0px 0px 0px"
 						display="inline-block"
 						color="rgba(19, 33, 42, 1)"
 						letter-spacing="-1%"
 						md-font="normal 700 30px/40px Inter, sans-serif"
-						sm-text-align="center"
-						sm-font="normal 700 24px/30px Inter, sans-serif"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
-							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
 							text-indent="0"
 							text-overflow="clip"
 							hyphens="manual"
+							overflow-wrap="normal"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
-								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
 							>
 								<Strong
-									data-q-widget-type="PRIMITIVE"
-									overflow-wrap="normal"
-									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									overflow-wrap="normal"
+									word-break="normal"
 								>
 									{"\n"}
 									<Strong
-										data-q-widget-type="PRIMITIVE"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
@@ -471,33 +459,30 @@ export default (() => {
 									>
 										{"\n"}
 										<Strong
-											data-q-widget-type="PRIMITIVE"
-											overflow-wrap="normal"
-											word-break="normal"
 											white-space="normal"
 											text-indent="0"
 											text-overflow="clip"
 											hyphens="manual"
+											overflow-wrap="normal"
+											word-break="normal"
 										>
 											{"\n"}
 											<Strong
-												data-q-widget-type="PRIMITIVE"
-												overflow-wrap="normal"
 												word-break="normal"
 												white-space="normal"
 												text-indent="0"
 												text-overflow="clip"
 												hyphens="manual"
+												overflow-wrap="normal"
 											>
 												{"\n"}
 												<Strong
-													data-q-widget-type="PRIMITIVE"
+													hyphens="manual"
 													overflow-wrap="normal"
 													word-break="normal"
 													white-space="normal"
 													text-indent="0"
 													text-overflow="clip"
-													hyphens="manual"
 												>
 													{"\n"}
 													<Strong>
@@ -519,12 +504,12 @@ export default (() => {
 						{"\n\n\n\n"}
 					</Text>
 					<Text
+						letter-spacing="-1%"
+						sm-text-align="center"
 						font="400 18px/160% --fontFamily-googleInter"
 						margin="30px 0px 0px 0px"
 						display="inline-block"
 						color="#555"
-						letter-spacing="-1%"
-						sm-text-align="center"
 					>
 						You can see how many computers have a specific application installed. This report represents a list with the name of applications and the amount of the PCs which have this application. The details for each applications are collapsed: you can click the name to see them.
 						<br />
@@ -535,7 +520,7 @@ export default (() => {
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12:20:06.102Z" />
+					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12:20:06.102Z" srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/103.png?v=2021-02-03T12%3A20%3A06.102Z&quality=85&w=3200 3200w" sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw" />
 					{"    "}
 				</StackItem>
 				{"    "}
@@ -546,6 +531,7 @@ export default (() => {
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
 					<Text
+						sm-font="normal 700 24px/30px Inter, sans-serif"
 						font="normal 700 32px/140% --fontFamily-googleInter"
 						margin="0px 0px 0px 0px"
 						display="inline-block"
@@ -553,10 +539,8 @@ export default (() => {
 						letter-spacing="-1%"
 						md-font="normal 700 30px/40px Inter, sans-serif"
 						sm-text-align="center"
-						sm-font="normal 700 24px/30px Inter, sans-serif"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -565,7 +549,6 @@ export default (() => {
 							hyphens="manual"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
 								overflow-wrap="normal"
 								word-break="normal"
 								white-space="normal"
@@ -574,7 +557,6 @@ export default (() => {
 								hyphens="manual"
 							>
 								<Strong
-									data-q-widget-type="PRIMITIVE"
 									overflow-wrap="normal"
 									word-break="normal"
 									white-space="normal"
@@ -584,17 +566,15 @@ export default (() => {
 								>
 									{"\n"}
 									<Strong
-										data-q-widget-type="PRIMITIVE"
-										overflow-wrap="normal"
-										word-break="normal"
-										white-space="normal"
 										text-indent="0"
 										text-overflow="clip"
 										hyphens="manual"
+										overflow-wrap="normal"
+										word-break="normal"
+										white-space="normal"
 									>
 										{"\n"}
 										<Strong
-											data-q-widget-type="PRIMITIVE"
 											overflow-wrap="normal"
 											word-break="normal"
 											white-space="normal"
@@ -604,7 +584,6 @@ export default (() => {
 										>
 											{"\n"}
 											<Strong
-												data-q-widget-type="PRIMITIVE"
 												overflow-wrap="normal"
 												word-break="normal"
 												white-space="normal"
@@ -614,7 +593,6 @@ export default (() => {
 											>
 												{"\n"}
 												<Strong
-													data-q-widget-type="PRIMITIVE"
 													overflow-wrap="normal"
 													word-break="normal"
 													white-space="normal"
@@ -624,13 +602,12 @@ export default (() => {
 												>
 													{"\n"}
 													<Strong
-														data-q-widget-type="PRIMITIVE"
+														hyphens="manual"
 														overflow-wrap="normal"
 														word-break="normal"
 														white-space="normal"
 														text-indent="0"
 														text-overflow="clip"
-														hyphens="manual"
 													>
 														{"\n"}
 														<Strong>
@@ -654,12 +631,12 @@ export default (() => {
 						{"\n\n\n\n"}
 					</Text>
 					<Text
-						font="400 18px/160% --fontFamily-googleInter"
 						margin="30px 0px 0px 0px"
 						display="inline-block"
 						color="#555"
 						letter-spacing="-1%"
 						sm-text-align="center"
+						font="400 18px/160% --fontFamily-googleInter"
 					>
 						You can see devices installed or uninstalled on each workstation in a single report. It will contains such details as vendor, ID, and the date the availability was checked last time.
 						<br />
@@ -670,17 +647,18 @@ export default (() => {
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12:21:36.846Z" />
+					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12:21:36.846Z" srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/104.png?v=2021-02-03T12%3A21%3A36.846Z&quality=85&w=3200 3200w" sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw" />
 					{"    "}
 				</StackItem>
 				{"    "}
 			</Stack>
 			<Stack margin="0px 0px 0px 0px" width="100%" gap="--cmp-stack-gap-default">
 				{"    "}
-				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
+				<StackItem sm-width="100%" nout-width="100%" width="80%" display="flex">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
 					<Text
+						sm-font="normal 700 24px/30px Inter, sans-serif"
 						font="normal 700 32px/140% --fontFamily-googleInter"
 						margin="0px 0px 0px 0px"
 						display="inline-block"
@@ -688,10 +666,8 @@ export default (() => {
 						letter-spacing="-1%"
 						md-font="normal 700 30px/40px Inter, sans-serif"
 						sm-text-align="center"
-						sm-font="normal 700 24px/30px Inter, sans-serif"
 					>
 						<Strong
-							data-q-widget-type="PRIMITIVE"
 							overflow-wrap="normal"
 							word-break="normal"
 							white-space="normal"
@@ -700,26 +676,23 @@ export default (() => {
 							hyphens="manual"
 						>
 							<Strong
-								data-q-widget-type="PRIMITIVE"
-								overflow-wrap="normal"
-								word-break="normal"
-								white-space="normal"
 								text-indent="0"
 								text-overflow="clip"
 								hyphens="manual"
+								overflow-wrap="normal"
+								word-break="normal"
+								white-space="normal"
 							>
 								<Strong
-									data-q-widget-type="PRIMITIVE"
-									overflow-wrap="normal"
-									word-break="normal"
 									white-space="normal"
 									text-indent="0"
 									text-overflow="clip"
 									hyphens="manual"
+									overflow-wrap="normal"
+									word-break="normal"
 								>
 									{"\n"}
 									<Strong
-										data-q-widget-type="PRIMITIVE"
 										overflow-wrap="normal"
 										word-break="normal"
 										white-space="normal"
@@ -729,17 +702,15 @@ export default (() => {
 									>
 										{"\n"}
 										<Strong
-											data-q-widget-type="PRIMITIVE"
-											overflow-wrap="normal"
-											word-break="normal"
-											white-space="normal"
 											text-indent="0"
 											text-overflow="clip"
 											hyphens="manual"
+											overflow-wrap="normal"
+											word-break="normal"
+											white-space="normal"
 										>
 											{"\n"}
 											<Strong
-												data-q-widget-type="PRIMITIVE"
 												overflow-wrap="normal"
 												word-break="normal"
 												white-space="normal"
@@ -749,7 +720,6 @@ export default (() => {
 											>
 												{"\n"}
 												<Strong
-													data-q-widget-type="PRIMITIVE"
 													overflow-wrap="normal"
 													word-break="normal"
 													white-space="normal"
@@ -759,17 +729,15 @@ export default (() => {
 												>
 													{"\n"}
 													<Strong
-														data-q-widget-type="PRIMITIVE"
-														overflow-wrap="normal"
-														word-break="normal"
-														white-space="normal"
 														text-indent="0"
 														text-overflow="clip"
 														hyphens="manual"
+														overflow-wrap="normal"
+														word-break="normal"
+														white-space="normal"
 													>
 														{"\n"}
 														<Strong
-															data-q-widget-type="PRIMITIVE"
 															overflow-wrap="normal"
 															word-break="normal"
 															white-space="normal"
@@ -817,7 +785,7 @@ export default (() => {
 				<StackItem width="80%" display="flex" sm-width="100%" nout-width="100%">
 					<Override slot="StackItemContent" flex-direction="column" />
 					{"        "}
-					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12:22:33.105Z" />
+					<Image src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12:22:33.105Z" srcSet="https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=500 500w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=800 800w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=1080 1080w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=1600 1600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=2000 2000w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=2600 2600w,https://smartuploads.quarkly.io/5f844e532e3a2a001faf55b8/images/105.png?v=2021-02-03T12%3A22%3A33.105Z&quality=85&w=3200 3200w" sizes="(max-width: 576px) 100vw,(max-width: 768px) 100vw,(max-width: 992px) 100vw,(max-width: 1066px) 100vw,(max-width: 1560px) 100vw,100vw" />
 					{"    "}
 				</StackItem>
 				{"    "}
@@ -828,102 +796,23 @@ export default (() => {
 			<Components.Form />
 			<Components.Footer>
 				<Override slot="text">
-					Russia, Novosibirsk, Koptug Road 4, Sobolev Institute of Mathematics
+					630090 ul. Kutateladze, 4g,
+					<br />
+					Novosibirsk, Russia.{"\n\n"}
 				</Override>
 			</Components.Footer>
 		</Section>
-		<Section
-			background="#ffffff"
-			padding="30px 0 30px 0"
-			border-width="1px 0px 0px 0px"
-			border-style="solid"
-			border-image="linear-gradient(353.68deg, rgba(255, 255, 255, 0) -0.12%, rgba(255, 255, 255, 0.04) 56.34%)  3 / 1 / 0 stretch"
-		>
-			<Override slot="SectionContent" max-width="1200px" align-items="center" />
-			<Stack width="100%" margin="0px 0px 0px 0px">
-				{"    "}
-				<StackItem width="53%" display="flex" lg-width="85%">
-					{"        "}
-					<Text
-						font="normal 400 15px/24px --fontFamily-googleInter"
-						margin="0px 0px 0px 0px"
-						display="inline-block"
-						color="#999999"
-						md-font="normal 400 13px/22px --fontFamily-googleInter"
-						sm-font="normal 400 12px/17px --fontFamily-googleInter"
-					>
-						© Atom Security LLC, 2001–2020. All rights reserved. All trademarks are the property of their respective owners.{"\n\n\n\n\n        "}
-					</Text>
-					{"    "}
-				</StackItem>
-				{"    "}
-				<StackItem width="47%" display="flex" lg-width="15%">
-					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" md-justify-content="center" />
-					{"        "}
-					<Link
-						id="gobot"
-						href="#shapka"
-						color="--primary"
-						text-decoration-line="initial"
-						padding="0px 0px 0px 0px"
-						target="_blank"
-						font="normal 600 25px/1.5 --fontFamily-sans"
-						margin="0px 0px 0px 0px"
-						display="flex"
-						lg-font="normal 400 24px/1.5 --fontFamily-sans"
-						sm-width="auto"
-						sm-text-align="center"
-						border-radius="40px"
-						text-align="center"
-						transition="box-shadow .3s ease,transform .3s ease,-webkit-box-shadow .3s ease,-webkit-transform .3s ease"
-						hover-box-shadow="0 10px 10px -6px rgba(0,0,0,.24)"
-						hover-transform="translateY(-2px)"
-						cursor="pointer"
-						align-items="center"
-						border-width="2px"
-						border-style="solid"
-						border-color="--color-primary"
-						md-padding="0px 0px 0px 0px"
-					>
-						<Image width="18px" height="18px" src="https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/Icon.svg?v=2020-10-21T00:34:26.772Z" padding="12px 13px 14px 13px" />
-					</Link>
-					{"    "}
-				</StackItem>
-			</Stack>
-		</Section>
-		<Link
-			font={"--capture"}
-			font-size={"10px"}
-			position={"fixed"}
-			bottom={"12px"}
-			right={"12px"}
-			z-index={"4"}
-			border-radius={"4px"}
-			padding={"5px 12px 4px"}
-			background-color={"--dark"}
-			opacity={"0.6"}
-			hover-opacity={"1"}
-			color={"--light"}
-			cursor={"pointer"}
-			transition={"--opacityOut"}
-			quarkly-title={"Badge"}
-			text-decoration-line={"initial"}
-			href={"https://quarkly.io/"}
-			target={"_blank"}
-		>
-			Made on Quarkly
-		</Link>
+		<Components.Copyright />
 		<RawHtml>
-			<script place={"endOfBody"} rawKey={"602addb1c8a45a16c77f897e"}>
-				{"\t(function (i, s, o, g, r, a, m) {\n\t\ti['GoogleAnalyticsObject'] = r;\n\t\ti[r] = i[r] || function () {\n\t\t\t(i[r].q = i[r].q || []).push(arguments);\n\t\t}, i[r].l = 1 * new Date();\n\t\t\n\t\ta = s.createElement(o),\n\t\t\tm = s.getElementsByTagName(o)[0];\n\t\ta.async = 1;\n\t\ta.src = g;\n\t\tm.parentNode.insertBefore(a, m);\n\t})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');\n\tga('create', 'UA-6450776-3', 'auto');\n\tga('send', 'pageview');"}
-			</script>
 			<style place={"endOfHead"} rawKey={"602ae6625a167a1bb9dbc787"}>
-				{"section#shapka {\n    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\n    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\n}\n.wrap-calc {\n    border-radius: 6px;\n}\na.menu-trigger:hover {\n    color: #1465FF;\n}\n.munecontainer a:hover {\n    text-decoration: underline;\n}\n.munecontainer li { \npadding: 5px; \nfont: normal 600 14px/1.5 var(--qtheme-fontFamily-googleSourceSansPro);\ntext-align: center !important;\n}\n.munecontainer a {\ncolor: rgba(19, 33, 42, 1);\nfont: 400 18px/28px var(--qtheme-fontFamily-googleInter);\ntext-align: center !important;\n}\na.menu-trigger {\n    padding: 33px 15px 30px 15px;\n}\n.munecontainer ul {\n    background: #ffffff;\n    list-style: none;\n    padding-inline-start: 0px;\n    padding: 10px;\n    width: 220px;\n    text-align: center;\n    position: relative;\n    top: -16px;\n    z-index: 9;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.14);\n    border-radius: 6px;\n}\ntd:nth-child(1) {\n    font-weight: 600;\n}\nnav {\n    position: relative;\n}\nnav a {\n    display: flex;\n    text-decoration: none;\n        font: var(--qtheme-font-menu);\n    color: #020202;\n}\n.munecontainer {\n    position: absolute;\n}\nli:hover {\n    background: #FAFAFA;\n    color: rgb(23, 103, 255);\n}\n.munecontainer a:hover {\n    background: #FAFAFA;\n    color: rgb(23, 103, 255);\n    text-decoration: none;\n}  \n.menuopen[display=\"block\"] {\n  -webkit-transform: scaleY(1);\n  -moz-transform: scaleY(1);\n  transform: scaleY(1);\n  -webkit-transition-duration: 0.3s;\n  -moz-transition-duration: 0.3s;\n  transition-duration: 0.3s;\n  -webkit-transform-origin: 100% 0%;\n  transform-origin: 100% 0%;\n  opacity: 1;\n  pointer-events: all;\n}\n\n.menuopen[display=\"none\"] {\n    z-index: 1 !important;\n    -webkit-transition-duration: 0.3s;\n    -moz-transition-duration: 0.3s;\n    transition-duration: 0.3s;\n    opacity: 0;\n    -webkit-transform: scaleY(0);\n    transform: scaleY(0);\n    -webkit-transform-origin: 100% 0%;\n    transform-origin: 100% 0%;\n    display: block;\n    margin-top: -20px;\n}\n\n.munecontainer ul {\n  border-top-left-radius: 0px !important;\n  border-top-right-radius: 0px !important;\n}\n\na.menu-trigger:hover~.munecontainer {\n  pointer-events: all;\n}\n\n.munecontainer {\n  pointer-events: none;\n}"}
+				{"section#shapka {\n    -webkit-animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\n    animation: fade-in-top 0.6s cubic-bezier(0.390, 0.575, 0.565, 1.000) both;\n}\n.wrap-calc {\n    border-radius: 6px;\n}\na.menu-trigger:hover {\n    color: #1465FF;\n}\n.munecontainer a:hover {\n    text-decoration: underline;\n}\n.munecontainer li { \npadding: 5px; \nfont: normal 600 14px/1.5 var(--qtheme-fontFamily-googleSourceSansPro);\ntext-align: center !important;\n}\n.munecontainer a {\ncolor: rgba(19, 33, 42, 1);\nfont: 400 18px/28px var(--qtheme-fontFamily-googleInter);\ntext-align: center !important;\n}\na.menu-trigger {\n    padding: 33px 15px 30px 15px;\n}\n.munecontainer ul {\n    background: #ffffff;\n    list-style: none;\n    padding-inline-start: 0px;\n    padding: 10px;\n    width: 220px;\n    text-align: center;\n    position: relative;\n    top: -16px;\n    z-index: 9;\n    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.06), 0px 0px 1px rgba(0, 0, 0, 0.14);\n    border-radius: 6px;\n}\ntd:nth-child(1) {\n    font-weight: 600;\n}\nnav {\n    position: relative;\n}\nnav a {\n    display: flex;\n    text-decoration: none;\n        font: var(--qtheme-font-menu);\n    color: #020202;\n}\n.munecontainer {\n    position: absolute;\n}\nli:hover {\n    background: #FAFAFA;\n    color: rgb(23, 103, 255);\n}\n.munecontainer a:hover {\n    background: #FAFAFA;\n    color: rgb(23, 103, 255);\n    text-decoration: none;\n}  \n.menuopen[data-display=\"block\"] {\n  -webkit-transform: scaleY(1);\n  -moz-transform: scaleY(1);\n  transform: scaleY(1);\n  -webkit-transition-duration: 0.3s;\n  -moz-transition-duration: 0.3s;\n  transition-duration: 0.3s;\n  -webkit-transform-origin: 100% 0%;\n  transform-origin: 100% 0%;\n  opacity: 1;\n  pointer-events: all;\n}\n\n.menuopen[data-display=\"none\"] {\n    z-index: 1 !important;\n    -webkit-transition-duration: 0.3s;\n    -moz-transition-duration: 0.3s;\n    transition-duration: 0.3s;\n    opacity: 0;\n    -webkit-transform: scaleY(0);\n    transform: scaleY(0);\n    -webkit-transform-origin: 100% 0%;\n    transform-origin: 100% 0%;\n    display: block;\n    margin-top: -20px;\n}\n\n.munecontainer ul {\n  border-top-left-radius: 0px !important;\n  border-top-right-radius: 0px !important;\n}\n\na.menu-trigger:hover~.munecontainer {\n  pointer-events: all;\n}\n\n.munecontainer {\n  pointer-events: none;\n}"}
 			</style>
-			<script place={"endOfBody"} rawKey={"6036af4a8bcc719b09a29177"}>
-				{"function ready() {\n    require(['jquery'], function($) {\n$('#button-11').attr({'onsubmit':'ga(\"send\", \"event\", \"preorder\")'})\n    });\n} \ndocument.addEventListener(\"DOMContentLoaded\", ready);"}
+			<script src={"https://www.googletagmanager.com/gtag/js?id=UA-6450776-3"} async={true} place={"endOfHead"} rawKey={"60a792403e90c37fb8c52e96"}>
+				{"  window.dataLayer = window.dataLayer || [];\n  function gtag(){dataLayer.push(arguments);}\n  gtag('js', new Date());\n\n  gtag('config', 'UA-6450776-3');"}
 			</script>
-			<link href={"http://kalyan-tay.ukit.me/js/lib/requirejs.min.js"} place={"endOfBody"} rawKey={"6036c4ad41cac81d90782665"} />
+			<script async={false} type={"text/javascript"} place={"endOfBody"} rawKey={"6397fad8cf33eb1c42d97b3d"}>
+				{"   (function(m,e,t,r,i,k,a){m[i]=m[i]||function(){(m[i].a=m[i].a||[]).push(arguments)};\n   m[i].l=1*new Date();\n   for (var j = 0; j < document.scripts.length; j++) {if (document.scripts[j].src === r) { return; }}\n   k=e.createElement(t),a=e.getElementsByTagName(t)[0],k.async=1,k.src=r,a.parentNode.insertBefore(k,a)})\n   (window, document, \"script\", \"https://mc.yandex.ru/metrika/tag.js\", \"ym\");\n\n   ym(91528209, \"init\", {\n        clickmap:true,\n        trackLinks:true,\n        accurateTrackBounce:true,\n        webvisor:true\n   });"}
+			</script>
 		</RawHtml>
 	</Theme>;
 });

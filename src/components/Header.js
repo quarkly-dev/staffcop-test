@@ -55,8 +55,8 @@ const overrides = {
 		"kind": "Image",
 		"props": {
 			"width": "100%",
-			"src": "https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/staffcop_logo%20(2)%201.svg?v=2020-10-15T10:37:02.579Z",
-			"padding": "2px 0px 0px 0px"
+			"padding": "2px 0px 0px 0px",
+			"src": "https://uploads.quarkly.io/5f844e532e3a2a001faf55b8/images/%D1%87%D0%B5%D1%80%D0%BD%D1%8B%D0%B9%20%D1%81%20%D0%BA%D0%BE%D0%BF%D0%BE%D0%BC%20CMYK%20%281%29%20%281%29.svg?v=2023-08-25T08:25:06.042Z"
 		}
 	},
 	"stackItem1": {
@@ -96,7 +96,7 @@ const overrides = {
 	"link2": {
 		"kind": "Link",
 		"props": {
-			"href": "/solutions/",
+			"href": "/cases/",
 			"text-decoration-line": "initial",
 			"font": "--menu",
 			"color": "#020202",

@@ -112,7 +112,7 @@ const overrides = {
 	"link": {
 		"kind": "Link",
 		"props": {
-			"href": "/starter/",
+			"href": "/request-demo",
 			"padding": "13px 29px 13px 29px",
 			"border-color": "--color-primary",
 			"border-radius": "40px",
@@ -204,7 +204,7 @@ const overrides = {
 	"link1": {
 		"kind": "Link",
 		"props": {
-			"href": "/uam/",
+			"href": "/request-demo",
 			"padding": "13px 29px 13px 29px",
 			"border-color": "--color-primary",
 			"border-radius": "40px",
@@ -305,7 +305,7 @@ const overrides = {
 	"link2": {
 		"kind": "Link",
 		"props": {
-			"href": "/dlp/",
+			"href": "/request-demo",
 			"padding": "13px 29px 13px 29px",
 			"border-radius": "40px",
 			"border-color": "#ffffff",

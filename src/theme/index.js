@@ -60,8 +60,8 @@ export default {
 		"serifTimes": "Cambria, 'Hoefler Text', Utopia, 'Liberation Serif', 'Nimbus Roman No9 L Regular', Times, 'Times New Roman', serif",
 		"serifGeorgia": "Constantia, 'Lucida Bright', Lucidabright, 'Lucida Serif', Lucida, 'DejaVu Serif', 'Bitstream Vera Serif', 'Liberation Serif', Georgia, serif",
 		"serifGaramond": "'Palatino Linotype', Palatino, Palladio, 'URW Palladio L', 'Book Antiqua', Baskerville, 'Bookman Old Style', 'Bitstream Charter', 'Nimbus Roman No9 L', Garamond, 'Apple Garamond', 'ITC Garamond Narrow', 'New Century Schoolbook', 'Century Schoolbook', 'Century Schoolbook L', Georgia, serif",
-		"googleOpenSans": "Open Sans, sans-serif",
-		"googleInter": "Inter, sans-serif"
+		"googleOpenSans": "\"Open Sans\", sans-serif",
+		"googleInter": "\"Inter\", sans-serif"
 	},
 	"font": {
 		"headline1": "normal 700 140px/169px --fontFamily-googleInter",
@@ -187,7 +187,6 @@ export default {
 			}
 		},
 		"Inter": {
-			"family": "Inter",
 			"type": "google-fonts",
 			"meta": {
 				"category": "sans-serif",
@@ -202,7 +201,8 @@ export default {
 					"800",
 					"900"
 				]
-			}
+			},
+			"family": "Inter"
 		}
 	},
 	"version": 24
